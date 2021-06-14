@@ -1,0 +1,20 @@
+﻿@{
+    string text = ViewBag.Message;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+
+    <h1>Hello SEARCH</h1>
+    <p>Parameter from Index: @text</p>
+
+    @Html.ActionLink("Back to Index", "Index", "Fit");
+</body>
+</html>
+

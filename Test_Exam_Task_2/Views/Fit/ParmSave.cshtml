@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "ParmSave";
+    string x = ViewBag.x;
+    string s = ViewBag.s;
+    string d = ViewBag.d;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+
+    <h1>Hello PARMSAVE</h1>
+    <div>
+        <p>Integer parameter: @x</p>
+        <p>String parameter: @s</p>
+        <p>Date parameter: @d</p>
+    </div>
+
+    @Html.ActionLink("Back to Index", "Index", "Fit");
+</body>
+</html>
+

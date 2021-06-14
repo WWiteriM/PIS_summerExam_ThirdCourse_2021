@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "GetParm";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+
+    <h1>Hello GETPARM</h1>
+
+    @using (Html.BeginForm("ParmSave", "Fit", FormMethod.Post))
+     {
+        <input type="number" name="x" placeholder="Enter number x" />
+        <input type="text" name="s" placeholder="Enter string s" />
+        <input type="date" name="d" placeholder="Enter date d" />
+        <button type="submit" name="press" value="Add">Add</button>
+        <button type="submit" name="press" value="Cancel">Cancel</button>
+     }
+</body>
+</html>
+

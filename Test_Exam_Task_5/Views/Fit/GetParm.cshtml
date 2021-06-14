@@ -1,0 +1,27 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetParm</title>
+</head>
+<body>
+    <h1>GETPARM</h1>
+    @using (Html.BeginForm("ParmSave", "FIT", FormMethod.Post))
+    {
+        <input type="number" name="x" placeholder="Enter x" /><br />
+        <input type="text" name="s" placeholder="Enter s" /><br />
+        <input type="date" name="d" placeholder="Enter d" /><br />
+        <button type="submit" name="press" value="ok">OK</button>
+        <button type="submit" name="press" value="cancel">Cancel</button>
+    }
+</body>
+</html>
+
+
